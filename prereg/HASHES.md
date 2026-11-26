@@ -10,3 +10,4 @@ Each file was written and made read-only before the corresponding measurements w
 | lc_v1.json | `939b26a83f081400da804fdfa74a8a668b08d631bf0ed5e43950191e61b30c0f` | long static contexts 256K-1M | 2026-11-26 ~10:58 |
 | lc_v2_posthoc.json | `78bb50a1419f7d1dc520bf9ec8891dfed59f6cafd5d029a46f1b2577a9898cad` | long-context post-hoc v2 (held-out sizes) | 2026-11-26 12:25 |
 | lc_fwd_v1.json | `64fd6ca641af08db5583ab2f12f315c0cd19101e63202be8c0fb782404e94aae` | forward long-context scenarios never run (BF16 C=8@1M, C=6@768K, C=8@512K; FP8 192K-896K) | 2026-11-26 17:56 (public commit before runs) |
+| s6_sdar_v1.json | `74f901de61c0765145886dc8f3ce47daa7f98569283e03e024dd4b3b61b08ed5` | serving-knob selection, SDAR-8B grid (replaces LLaDA2.2 grid) | 2026-11-26 18:44 (committed here before any run) |
