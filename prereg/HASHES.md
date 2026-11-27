@@ -12,3 +12,5 @@ Each file was written and made read-only before the corresponding measurements w
 | lc_fwd_v1.json | `64fd6ca641af08db5583ab2f12f315c0cd19101e63202be8c0fb782404e94aae` | forward long-context scenarios never run (BF16 C=8@1M, C=6@768K, C=8@512K; FP8 192K-896K) | 2026-11-26 17:56 (public commit before runs) |
 | s6_sdar_v1.json | `74f901de61c0765145886dc8f3ce47daa7f98569283e03e024dd4b3b61b08ed5` | serving-knob selection, SDAR-8B grid (replaces LLaDA2.2 grid) | 2026-11-26 18:44 (committed here before any run) |
 | lcap_v1.json | `9965601dc04f390e8962c05f4b205ddebfc482224aad08228390642bd115d8ea` | long-context scheduling: KV-capacity boundary (1M C=10/12, 512K C=20/24), head-of-line blocking of short requests behind a 1M prefill, P/D at 128K/240K (C=1/4/8/16) | 2026-11-27 02:36 (public before runs) |
+| scale_s1_v1.json | `a2677b57de10b5fe602234026dcadb0b645def66906f3925b5cf741f13d711e6` | scale S1: P/D ratio & scale (1P1D..3P1D, 4P4D/2P6D/6P2D) vs colocated replicas | 2026-11-27 03:00 |
+| scale_s2_v1.json | `7baeeb661ceb9b13dc2aa6336512cb7fb2efeb9d56d6299696c6da3475f307c5` | scale S2: MoRI-EP scaling 2/4/8 nodes after the receive-row fix | 2026-11-27 03:00 |
